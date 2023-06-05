@@ -7,6 +7,9 @@ public class Professor extends Pessoa {
     private double salario;
     private ArrayList<Curso> cursos;
 
+    //public Professor(){
+        super();
+}
     public void setTitulacao(String titulacao) {
         this.titulacao = titulacao;
     }
@@ -33,11 +36,14 @@ public class Professor extends Pessoa {
         return cursos;
     }
     
+    //@Override
     public void imprimir() {
         super.imprimir();
+        system.out.println("------ Dados do Professor ------");
+        //super.imprmir();
         System.out.println("Titulação: " + titulacao);
         System.out.println("Salário: " + salario);
-        System.out.println("Cursos:");
+        //System.out.println("Cursos:");
         
         for (int i = 0; i < getCursos().size(); i++) {
             getCursos().get(i).imprimirCurso();
