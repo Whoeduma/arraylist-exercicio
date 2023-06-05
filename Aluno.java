@@ -7,6 +7,9 @@ public class Aluno extends Pessoa {
     private Curso curso;
     private ArrayList<Double> notas;
 
+    public Aluno(){
+        super();
+    }
    public void setCurso(Curso curso) {
         this.curso = curso;
     }
@@ -31,7 +34,9 @@ public class Aluno extends Pessoa {
         return soma / notas.size();
     }
     
+    @Override
      public void imprimir() {
+         System.out.println("---- Dados do Aluno ----")
         super.imprimir();
         System.out.println("Curso: " + curso.getNome());
         System.out.println("Notas:");
