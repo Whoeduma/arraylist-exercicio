@@ -60,7 +60,8 @@ class Pessoa {
             getTelefones().get(i).imprimirTelefone();
         }
         System.out.println("Endereço:");
-        endereco.imprimirEndereco();
+        getEndereco().imprimirEndereco();
+        //endereco.imprimirEndereco();
     }
     
    
